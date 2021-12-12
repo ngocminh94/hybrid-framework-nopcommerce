@@ -14,7 +14,7 @@ import commons.BasePage;
 import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
 
-public class Level_03_Page_Object{
+public class Level_03_Page_Object_01_Register{
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
 	private HomePageObject homePage;
@@ -27,19 +27,20 @@ public class Level_03_Page_Object{
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
+		homePage = new HomePageObject(driver);
 				
 		firstName ="Min"; 
 		lastName = "Trinh";
 		emailAddress = "auto" + generateFakeNumber() + "@mail.vn";
 		password = "123456";
 		
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
 	}
 
 	@Test
 	public void Register_01_Empty_Data() {	
 		homePage.clickToRegisterLink();
+
+		registerPage = new RegisterPageObject(driver);
 		
 		registerPage.clickToRegisterButton();
 		
@@ -53,6 +54,8 @@ public class Level_03_Page_Object{
 	@Test
 	public void Register_02_Invalid_Email() {		
 		homePage.clickToRegisterLink();
+		
+		registerPage = new RegisterPageObject(driver);
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -68,6 +71,8 @@ public class Level_03_Page_Object{
 	@Test
 	public void Register_03_Success() {
 		homePage.clickToRegisterLink();
+		
+		registerPage = new RegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -86,6 +91,8 @@ public class Level_03_Page_Object{
 	public void Register_04_Existing_Email() {
 		homePage.clickToRegisterLink();
 		
+		registerPage = new RegisterPageObject(driver);
+		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
@@ -100,6 +107,8 @@ public class Level_03_Page_Object{
 	@Test
 	public void Register_05_Password_Less_Than_6_Chars() {
 		homePage.clickToRegisterLink();
+		
+		registerPage = new RegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -116,6 +125,8 @@ public class Level_03_Page_Object{
 	@Test
 	public void Register_06_Invalid_Confirm_Password() {
 		homePage.clickToRegisterLink();
+		
+		registerPage = new RegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
