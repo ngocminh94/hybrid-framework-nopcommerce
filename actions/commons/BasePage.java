@@ -98,8 +98,8 @@ public class BasePage {
 				driver.switchTo().window(id);
 				driver.close();
 			}
+			driver.switchTo().window(parentID);
 		}
-		driver.switchTo().window(parentID);
 	}
 
 	private By getByXpath(String xpathLocator) {

@@ -19,7 +19,7 @@ import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
 
 public class Level_04_Multiple_Browsers extends BaseTest{
-	private WebDriver driverTestClass;
+	private WebDriver driver;
 	private String firstName, lastName, password;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
@@ -27,9 +27,9 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		driverTestClass = getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName);
 
-		homePage = new HomePageObject(driverTestClass);
+		homePage = new HomePageObject(driver);
 		firstName = "Min";
 		lastName = "Trinh";
 		password = "123456";
@@ -39,7 +39,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 	public void Register_01_Empty_Data() {
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driverTestClass);
+		registerPage = new RegisterPageObject(driver);
 
 		registerPage.clickToRegisterButton();
 
@@ -54,7 +54,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 	public void Register_02_Invalid_Email() {
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driverTestClass);
+		registerPage = new RegisterPageObject(driver);
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -69,7 +69,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 
 	@AfterClass
 	public void afterClass() {
-		driverTestClass.quit();
+		driver.quit();
 	}
 
 	public int generateFakeNumber() {
