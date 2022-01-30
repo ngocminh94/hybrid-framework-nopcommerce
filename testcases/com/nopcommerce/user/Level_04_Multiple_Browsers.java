@@ -37,7 +37,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 
 	@Test
 	public void Register_01_Empty_Data() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage = new RegisterPageObject(driver);
 
@@ -52,7 +52,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 
 	@Test
 	public void Register_02_Invalid_Email() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage = new RegisterPageObject(driver);
 

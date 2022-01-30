@@ -38,7 +38,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_01_Empty_Data() {	
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage = new RegisterPageObject(driver);
 		
@@ -53,7 +53,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_02_Invalid_Email() {		
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage = new RegisterPageObject(driver);
 
@@ -70,7 +70,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_03_Success() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage = new RegisterPageObject(driver);
 		
@@ -89,7 +89,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_04_Existing_Email() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage = new RegisterPageObject(driver);
 		
@@ -106,7 +106,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_05_Password_Less_Than_6_Chars() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage = new RegisterPageObject(driver);
 		
@@ -124,7 +124,7 @@ public class Level_03_Page_Object_01_Register{
 
 	@Test
 	public void Register_06_Invalid_Confirm_Password() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage = new RegisterPageObject(driver);
 		
