@@ -8,22 +8,22 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, existingEmail, validPassword, incorrectPassword;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 				
 		firstName ="Min"; 
 		lastName = "Trinh";
@@ -34,7 +34,7 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 		incorrectPassword = "654321";
 				
 		homePage.openRegisterPage();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -48,14 +48,14 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 		
 		registerPage.clickToLogoutlink();
 		
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test
 	public void Login_01_Empty_Data() {	
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.clickToLoginButton();
 		
@@ -66,7 +66,7 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	public void Login_02_Invalid_email() {	
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextbox(invalidEmail);
 		
@@ -79,7 +79,7 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	public void Login_03_Email_Not_Found() {
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextbox(notFoundEmail);
 		
@@ -94,7 +94,7 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	public void Login_04_Existing_Email_Empty_Password() {	
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox("");
@@ -110,7 +110,7 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	public void Login_05_Existing_Email_Incorrect_Password() {	
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox(incorrectPassword);
@@ -126,14 +126,14 @@ public class Level_06_Page_Generator_Manager_I  extends BaseTest{
 	public void Login_06_Valid_Email_Password() {	
 		homePage.openLoginPage();
 		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox(validPassword);
 		
 		loginPage.clickToLoginButton();
 		
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}	

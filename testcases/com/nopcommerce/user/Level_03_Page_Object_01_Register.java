@@ -11,14 +11,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import commons.BasePage;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_03_Page_Object_01_Register{
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String projectPath = System.getProperty("user.dir");
 
 	@BeforeClass
@@ -27,7 +27,7 @@ public class Level_03_Page_Object_01_Register{
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 				
 		firstName ="Min"; 
 		lastName = "Trinh";
@@ -40,7 +40,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_01_Empty_Data() {	
 		homePage.openRegisterPage();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.clickToRegisterButton();
 		
@@ -55,7 +55,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_02_Invalid_Email() {		
 		homePage.openRegisterPage();
 		
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -72,7 +72,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_03_Success() {
 		homePage.openRegisterPage();
 		
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -91,7 +91,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_04_Existing_Email() {
 		homePage.openRegisterPage();
 		
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -108,7 +108,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_05_Password_Less_Than_6_Chars() {
 		homePage.openRegisterPage();
 		
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -126,7 +126,7 @@ public class Level_03_Page_Object_01_Register{
 	public void Register_06_Invalid_Confirm_Password() {
 		homePage.openRegisterPage();
 		
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);

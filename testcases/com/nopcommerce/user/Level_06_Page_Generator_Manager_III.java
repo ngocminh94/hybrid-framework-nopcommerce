@@ -8,11 +8,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.CustomerInforPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopCommerce.user.UserCustomerInforPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_III extends BaseTest {
 	
@@ -21,7 +21,7 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Min";
 		lastName = "Trinh";
@@ -117,7 +117,7 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 		
-		myAccountPage = homePage.clickToMyAccountLink();
+		myAccountPage = homePage.openMyAccountPage();
 	}
 
 	@AfterClass
@@ -126,10 +126,10 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 	}
 
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInforPageObject myAccountPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInforPageObject myAccountPage;
 	private String firstName, lastName, invalidEmail, notFoundEmail, existingEmail, validPassword, incorrectPassword;
 
 }

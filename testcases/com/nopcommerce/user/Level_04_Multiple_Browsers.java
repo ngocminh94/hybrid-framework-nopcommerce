@@ -15,21 +15,21 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_04_Multiple_Browsers extends BaseTest{
 	private WebDriver driver;
 	private String firstName, lastName, password;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		firstName = "Min";
 		lastName = "Trinh";
 		password = "123456";
@@ -39,7 +39,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 	public void Register_01_Empty_Data() {
 		homePage.openRegisterPage();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.clickToRegisterButton();
 
@@ -54,7 +54,7 @@ public class Level_04_Multiple_Browsers extends BaseTest{
 	public void Register_02_Invalid_Email() {
 		homePage.openRegisterPage();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
