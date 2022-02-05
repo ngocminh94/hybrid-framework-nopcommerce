@@ -71,12 +71,21 @@ public class Topic_12_String {
 			// thi se sleep cứng thêm 5s sau mỗi sự kiện chuyển page
 		}
 		
+		// Khoảng trắng/ xuống dòng/ tab
+		String helloWorld = " \n \t 	Hello World!	";
+		System.out.println(helloWorld);
+		System.out.println(helloWorld.trim());
+		
+		helloWorld = " ";
+		System.out.println("Empty = " + helloWorld.isEmpty());
+		System.out.println("Empty = " + helloWorld.isBlank());
+		
 		// Dynamic locator
 		// Đại diện cho 1 chuỗi: %s
 		// %b %t %d
 		String dynamicButtonXpath = "//button[@id='%s']";
-		System.out.println("Click to Login button = " + dynamicButtonXpath.format(dynamicButtonXpath, "login"));
-		System.out.println("Click to Search button = " + dynamicButtonXpath.format(dynamicButtonXpath, "search"));
+		System.out.println("Click to Login button = " + String.format(dynamicButtonXpath, "login"));
+		System.out.println("Click to Search button = " + String.format(dynamicButtonXpath, "search"));
 		
 		
 		
