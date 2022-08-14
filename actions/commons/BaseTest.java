@@ -41,12 +41,12 @@ public class BaseTest {
 			throw new RuntimeException("Browser name invalid!");
 		}
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(GlobalConstants.PORTAL_DEV_URL);	
 		return driver;
 	}
 	
-	protected WebDriver getBrowserDriver(String browserName, String environmentName) {
+	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -72,12 +72,16 @@ public class BaseTest {
 			throw new RuntimeException("Browser name invalid!");
 		}
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get(getEnvironmentUrl(environmentName));	
+		if(GlobalConstants.OS_NAME.startsWith("Windows")) {
+			
+		}
+		
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);	
 		return driver;
 	}
 	
-	private String getEnvironmentUrl(String environmentName) {
+	protected String getEnvironmentUrl(String environmentName) {
 		String url = null;
 		switch (environmentName) {
 		case "DEV":
