@@ -1,7 +1,5 @@
 package reportConfig;
 
-import java.io.File;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +8,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import commons.BaseTest;
-import commons.GlobalConstants;
 import io.qameta.allure.Attachment;
 
 public class AllureTestListener implements ITestListener {
