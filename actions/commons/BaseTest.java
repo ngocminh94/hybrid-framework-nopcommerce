@@ -1,8 +1,11 @@
 package commons;
 
+import java.io.File;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,11 +14,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
+	protected final Log log;
+	
+	@BeforeSuite
+	public void initBeforeSuite() {
+		deleteAllureReport();
+	}
+	
+	protected BaseTest() {
+		log = LogFactory.getLog(getClass());
+	}
 	
 	protected WebDriver getBrowserDriver(String browserName) {
 		if(browserName.equals("firefox")) {
@@ -83,6 +97,10 @@ public class BaseTest {
 		return driver;
 	}
 	
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
+	
 	protected String getEnvironmentUrl(String environmentName) {
 		String url = null;
 		switch (environmentName) {
@@ -105,9 +123,9 @@ public class BaseTest {
 		boolean pass = true;
 		try {
 			Assert.assertTrue(condition);
-			System.out.println(" -------------------------- PASSED -------------------------- ");
+			log.info(" -------------------------- PASSED -------------------------- ");
 		} catch (Throwable e) {
-			System.out.println(" -------------------------- FAILED -------------------------- ");
+			log.info(" -------------------------- FAILED -------------------------- ");
 			pass = false;
 
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
@@ -120,10 +138,11 @@ public class BaseTest {
 		boolean pass = true;
 		try {
 			Assert.assertFalse(condition);
-			System.out.println(" -------------------------- PASSED -------------------------- ");
+			log.info(" -------------------------- PASSED -------------------------- ");
 		} catch (Throwable e) {
-			System.out.println(" -------------------------- FAILED -------------------------- ");
+			log.info(" -------------------------- FAILED -------------------------- ");
 			pass = false;
+			
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
@@ -144,4 +163,18 @@ public class BaseTest {
 		return pass;
 	}
 
+	public void deleteAllureReport() {
+		try {
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
+	}
 }

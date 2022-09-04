@@ -1,0 +1,187 @@
+[INFO ] [2022-09-01 17:22:55,129] Register - Step 01: Navigate to Register page
+[INFO ] [2022-09-01 17:22:56,313] Register - Step 02: Enter to First name textbox with value 'Min'
+[INFO ] [2022-09-01 17:22:56,760] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[INFO ] [2022-09-01 17:22:57,152] Register - Step 04: Enter to Email address textbox with value 'auto2388@mail.vn'
+[INFO ] [2022-09-01 17:22:57,495] Register - Step 05: Enter to Password textbox with value '123456'
+[INFO ] [2022-09-01 17:22:57,774] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[INFO ] [2022-09-01 17:22:58,212] Register - Step 07: Click to Register button
+[INFO ] [2022-09-01 17:23:00,608] Register - Step 08: Verify register success message displayed
+[INFO ] [2022-09-01 17:23:00,771] Register - Step 09: Click to logout link
+[INFO ] [2022-09-01 17:23:02,002] Login - Step 01: Navigate to Login page
+[INFO ] [2022-09-01 17:23:03,064] Login - Step 02: Enter to Email address textbox with value 'auto2388@mail.vn'
+[INFO ] [2022-09-01 17:23:03,458] Login - Step 03: Enter to Password textbox with value '123456'
+[INFO ] [2022-09-01 17:23:03,724] Login - Step 04: Click to Login button
+[INFO ] [2022-09-01 17:23:04,734] Login - Step 05: Verify 'My Account link' displayed
+[INFO ] [2022-09-01 17:23:04,929] Login - Step 06: Navigate to My Account page
+[INFO ] [2022-09-01 17:23:05,983] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-01 18:23:12,152] Register - Step 01: Navigate to Register page
+[2022-09-01 18:23:42,251] Login - Step 01: Navigate to Login page
+[2022-09-02 16:27:50,192] Register - Step 01: Navigate to Register page
+[2022-09-02 16:27:52,133] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 16:27:52,589] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 16:27:52,961] Register - Step 04: Enter to Email address textbox with value 'auto3506@mail.vn'
+[2022-09-02 16:27:53,252] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 16:27:53,512] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 16:27:53,805] Register - Step 07: Click to Register button
+[2022-09-02 16:27:55,254] Register - Step 08: Verify register success message displayed
+[2022-09-02 16:27:55,434] Register - Step 09: Click to logout link
+[2022-09-02 16:27:56,665] Login - Step 01: Navigate to Login page
+[2022-09-02 16:27:57,967] Login - Step 02: Enter to Email address textbox with value 'auto3506@mail.vn'
+[2022-09-02 16:27:58,412] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 16:27:58,784] Login - Step 04: Click to Login button
+[2022-09-02 16:28:00,163] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 16:28:00,394]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:28:00,394] Login - Step 06: Navigate to My Account page
+[2022-09-02 16:28:01,407] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 16:28:01,579]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:42:50,351] Register - Step 01: Navigate to Register page
+[2022-09-02 16:42:51,962] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 16:42:52,392] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 16:42:52,786] Register - Step 04: Enter to Email address textbox with value 'auto9901@mail.vn'
+[2022-09-02 16:42:53,172] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 16:42:53,455] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 16:42:53,714] Register - Step 07: Click to Register button
+[2022-09-02 16:42:54,909] Register - Step 08: Verify register success message displayed
+[2022-09-02 16:42:55,069] Register - Step 09: Click to logout link
+[2022-09-02 16:42:56,374] Login - Step 01: Navigate to Login page
+[2022-09-02 16:42:57,457] Login - Step 02: Enter to Email address textbox with value 'auto9901@mail.vn'
+[2022-09-02 16:42:57,864] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 16:42:58,242] Login - Step 04: Click to Login button
+[2022-09-02 16:42:59,243] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 16:42:59,466]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:42:59,466] Login - Step 06: Navigate to My Account page
+[2022-09-02 16:43:00,383] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 16:43:00,542]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:48:27,816] Register - Step 01: Navigate to Register page
+[2022-09-02 16:48:30,069] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 16:48:30,570] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 16:48:31,032] Register - Step 04: Enter to Email address textbox with value 'auto3560@mail.vn'
+[2022-09-02 16:48:31,441] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 16:48:31,811] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 16:48:32,114] Register - Step 07: Click to Register button
+[2022-09-02 16:48:33,172] Register - Step 08: Verify register success message displayed
+[2022-09-02 16:48:33,277] Register - Step 09: Click to logout link
+[2022-09-02 16:48:34,417] Login - Step 01: Navigate to Login page
+[2022-09-02 16:48:35,273] Login - Step 02: Enter to Email address textbox with value 'auto3560@mail.vn'
+[2022-09-02 16:48:35,623] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 16:48:35,955] Login - Step 04: Click to Login button
+[2022-09-02 16:48:36,908] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 16:48:37,007]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:48:37,008] Login - Step 06: Navigate to My Account page
+[2022-09-02 16:48:37,873] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 16:48:38,053]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:56:23,995] Register - Step 01: Navigate to Register page
+[2022-09-02 16:56:25,741] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 16:56:26,135] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 16:56:26,566] Register - Step 04: Enter to Email address textbox with value 'auto8601@mail.vn'
+[2022-09-02 16:56:26,980] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 16:56:27,349] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 16:56:27,709] Register - Step 07: Click to Register button
+[2022-09-02 16:56:28,940] Register - Step 08: Verify register success message displayed
+[2022-09-02 16:56:29,099] Register - Step 09: Click to logout link
+[2022-09-02 16:56:30,305] Login - Step 01: Navigate to Login page
+[2022-09-02 16:56:31,263] Login - Step 02: Enter to Email address textbox with value 'auto8601@mail.vn'
+[2022-09-02 16:56:31,620] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 16:56:31,953] Login - Step 04: Click to Login button
+[2022-09-02 16:56:33,072] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 16:56:33,256]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:56:33,257] Login - Step 06: Navigate to My Account page
+[2022-09-02 16:56:34,282] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 16:56:34,413]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:56:39,982] Register - Step 01: Navigate to Register page
+[2022-09-02 16:56:41,642] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 16:56:42,028] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 16:56:42,371] Register - Step 04: Enter to Email address textbox with value 'auto6243@mail.vn'
+[2022-09-02 16:56:42,734] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 16:56:43,062] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 16:56:43,390] Register - Step 07: Click to Register button
+[2022-09-02 16:56:44,698] Register - Step 08: Verify register success message displayed
+[2022-09-02 16:56:44,855] Register - Step 09: Click to logout link
+[2022-09-02 16:56:46,075] Login - Step 01: Navigate to Login page
+[2022-09-02 16:56:47,028] Login - Step 02: Enter to Email address textbox with value 'auto6243@mail.vn'
+[2022-09-02 16:56:47,382] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 16:56:47,702] Login - Step 04: Click to Login button
+[2022-09-02 16:56:48,741] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 16:56:48,819]  -------------------------- FAILED -------------------------- 
+[2022-09-02 16:56:48,819] Login - Step 06: Navigate to My Account page
+[2022-09-02 16:56:49,727] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 16:56:49,841]  -------------------------- FAILED -------------------------- 
+[2022-09-02 19:53:33,025] Register - Step 01: Navigate to Register page
+[2022-09-02 19:53:34,510] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 19:53:34,851] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 19:53:35,102] Register - Step 04: Enter to Email address textbox with value 'auto1036@mail.vn'
+[2022-09-02 19:53:35,344] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 19:53:35,563] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 19:53:35,801] Register - Step 07: Click to Register button
+[2022-09-02 19:53:36,870] Register - Step 08: Verify register success message displayed
+[2022-09-02 19:53:36,974] Register - Step 09: Click to logout link
+[2022-09-02 19:53:38,697] Login - Step 01: Navigate to Login page
+[2022-09-02 19:53:39,430] Login - Step 02: Enter to Email address textbox with value 'auto1036@mail.vn'
+[2022-09-02 19:53:39,669] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 19:53:39,897] Login - Step 04: Click to Login button
+[2022-09-02 19:53:40,907] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 19:53:41,003]  -------------------------- FAILED -------------------------- 
+[2022-09-02 19:53:41,004] Login - Step 06: Navigate to My Account page
+[2022-09-02 19:53:41,733] Login - Step 07: Verify 'Cudtomer Info' page displayed
+[2022-09-02 19:53:41,859]  -------------------------- FAILED -------------------------- 
+[2022-09-02 20:00:51,570] Register - Step 01: Navigate to Register page
+[2022-09-02 20:00:53,683] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 20:00:53,956] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 20:00:54,206] Register - Step 04: Enter to Email address textbox with value 'auto3830@mail.vn'
+[2022-09-02 20:00:54,459] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 20:00:54,692] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 20:00:54,989] Register - Step 07: Click to Register button
+[2022-09-02 20:00:57,005] Register - Step 08: Verify register success message displayed
+[2022-09-02 20:00:57,480] Login - Step 01: Navigate to Login page
+[2022-09-02 20:11:41,506] Register - Step 01: Navigate to Register page
+[2022-09-02 20:11:45,579] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 20:11:45,883] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 20:11:46,198] Register - Step 04: Enter to Email address textbox with value 'auto4801@mail.vn'
+[2022-09-02 20:11:46,508] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 20:11:46,780] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 20:11:47,016] Register - Step 07: Click to Register button
+[2022-09-02 20:11:48,303] Register - Step 08: Verify register success message displayed
+[2022-09-02 20:11:48,818] Login - Step 01: Navigate to Login page
+[2022-09-02 20:11:53,221] Login - Step 02: Enter to Email address textbox with value 'auto4801@mail.vn'
+[2022-09-02 20:11:53,584] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 20:11:53,939] Login - Step 04: Click to Login button
+[2022-09-02 20:11:54,969] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 20:14:39,564] Register - Step 01: Navigate to Register page
+[2022-09-02 20:14:41,349] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 20:14:41,646] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 20:14:41,970] Register - Step 04: Enter to Email address textbox with value 'auto2091@mail.vn'
+[2022-09-02 20:14:42,262] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 20:14:42,640] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 20:14:43,012] Register - Step 07: Click to Register button
+[2022-09-02 20:14:44,852] Register - Step 08: Verify register success message displayed
+[2022-09-02 20:14:45,277] Login - Step 01: Navigate to Login page
+[2022-09-02 20:14:49,195] Login - Step 02: Enter to Email address textbox with value 'auto2091@mail.vn'
+[2022-09-02 20:14:49,566] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 20:14:49,891] Login - Step 04: Click to Login button
+[2022-09-02 20:14:51,375] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-02 20:16:54,238] Register - Step 01: Navigate to Register page
+[2022-09-02 20:16:56,042] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-02 20:16:56,445] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-02 20:16:56,820] Register - Step 04: Enter to Email address textbox with value 'auto9622@mail.vn'
+[2022-09-02 20:16:57,115] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-02 20:16:57,350] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-02 20:16:57,589] Register - Step 07: Click to Register button
+[2022-09-02 20:16:58,861] Register - Step 08: Verify register success message displayed
+[2022-09-02 20:16:59,319] Login - Step 01: Navigate to Login page
+[2022-09-02 20:17:05,178] Login - Step 02: Enter to Email address textbox with value 'auto9622@mail.vn'
+[2022-09-02 20:17:05,338] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-02 20:17:05,502] Login - Step 04: Click to Login button
+[2022-09-02 20:17:06,319] Login - Step 05: Verify 'My Account link' displayed
+[2022-09-03 10:20:17,030] Register - Step 01: Navigate to Register page
+[2022-09-03 10:20:17,797] Register - Step 02: Enter to First name textbox with value 'Min'
+[2022-09-03 10:20:17,922] Register - Step 03: Enter to Last name textbox with value 'Trinh'
+[2022-09-03 10:20:18,041] Register - Step 04: Enter to Email address textbox with value 'auto9347@mail.vn'
+[2022-09-03 10:20:18,155] Register - Step 05: Enter to Password textbox with value '123456'
+[2022-09-03 10:20:18,264] Register - Step 06: Enter to Confirm Password textbox with value '123456'
+[2022-09-03 10:20:18,369] Register - Step 07: Click to Register button
+[2022-09-03 10:20:19,450] Register - Step 08: Verify register success message displayed
+[2022-09-03 10:20:19,502] Login - Step 01: Navigate to Login page
+[2022-09-03 10:20:21,088] Login - Step 02: Enter to Email address textbox with value 'auto9347@mail.vn'
+[2022-09-03 10:20:21,192] Login - Step 03: Enter to Password textbox with value '123456'
+[2022-09-03 10:20:21,292] Login - Step 04: Click to Login button
+[2022-09-03 10:20:22,133] Login - Step 05: Verify 'My Account link' displayed
